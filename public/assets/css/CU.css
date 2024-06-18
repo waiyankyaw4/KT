@@ -1,0 +1,62 @@
+.logo {
+    vertical-align: middle; /* Aligns image with the middle of the text */
+    margin-left: 10px; /* Optional: Adjust spacing between text and image */
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Gallery Container */
+  div.gallery {
+    border: 2px solid #137dbf;
+    overflow: hidden;
+  }
+
+  div.gallery:hover {
+    border: 3px solid #777;
+  }
+
+  /* Image Styles */
+  div.gallery img {
+    width: 100%;
+    height: 180px;
+  }
+
+  /* Description Styles */
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(24, 32, 181, 0.926);
+  }
+
+  /* Responsive Columns */
+  .responsive {
+    padding: 6px 6px;
+    float: left;
+    width: 16%; /* Default: Four columns */
+  }
+
+  /* Responsive Breakpoints */
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 20%; /* Adjusted to five columns on smaller screens */
+      margin: 20px 20px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%; /* Full width on the smallest screens */
+    }
+  }
+
+  /* Clearfix */
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
